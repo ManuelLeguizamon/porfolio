@@ -1,0 +1,88 @@
+/* INICIO ----------------------------- */
+
+.inicio{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #eee8e1; /* tono crema */
+    font-family: 'Inter', sans-serif;
+    padding-right: 6rem;
+}
+
+.linea-vertical{
+    width: 1.7px;
+    height: 50vh;
+    background-color: #333;
+    margin-left: 3rem;
+    margin-right: 2rem;
+}
+
+
+.inicio-contenido{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+.inicio-izquierda{
+    display: flex;
+    flex-direction: column;
+}
+.inicio-izquierda h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    letter-spacing: 8px;
+    margin: 0;
+}
+.sub-info{
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #0000009d;
+    line-height: 1.2;
+    letter-spacing: 6px;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+
+  position: absolute;
+  top: 80vh;
+}
+
+.icons a {
+  color: #000;
+  transition: opacity .2s;
+}
+
+.icons a:hover {
+  opacity: 0.5;
+}
+
+.inicio-enlaces {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: right;
+
+}
+
+.inicio-enlaces a {
+    font-family: 'Playfair Display', serif;
+    text-shadow: 0 3px 10px rgba(0, 0, 0, 0.486) !important;
+    font-size: 6rem;
+    color: #000;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+    transition: transform .4s ease;
+}
+
+.inicio-enlaces a:hover {
+  transform: translateX(8px);
+    text-shadow: 0 3px 12px rgba(0, 0, 0, 0.548) !important;
+}
