@@ -6,7 +6,6 @@
     align-items: center;
     height: 100vh;
     width: 100vw;
-    background-color: #eee8e1; /* tono crema */
     font-family: 'Inter', sans-serif;
     padding-right: 6rem;
 }
@@ -24,7 +23,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100vw;
+    width: 100%;
 }
 
 .inicio-izquierda{
@@ -37,6 +36,7 @@
     letter-spacing: 8px;
     margin: 0;
 }
+
 .sub-info{
     font-family: 'Playfair Display', serif;
     font-size: 1.8rem;
@@ -48,19 +48,20 @@
 .icons {
   display: flex;
   flex-direction: row;
-  gap: 15px;
-
+  gap: 18px;
   position: absolute;
   top: 80vh;
 }
 
 .icons a {
   color: #000;
-  transition: opacity .2s;
+  /* transition: opacity .2s; */
+  transition: .4s;
 }
 
 .icons a:hover {
   opacity: 0.5;
+  transform: scale(1.3);
 }
 
 .inicio-enlaces {
@@ -83,6 +84,6 @@
 }
 
 .inicio-enlaces a:hover {
-  transform: translateX(8px);
-    text-shadow: 0 3px 12px rgba(0, 0, 0, 0.548) !important;
+  transform: translateX(12px);
+  text-shadow: 0 3px 12px rgba(0, 0, 0, 0.548) !important;
 }

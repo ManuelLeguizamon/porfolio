@@ -1,0 +1,119 @@
+.proyectos {
+    padding: 4rem 6rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.proyectos-titulo {
+    font-family: 'Playfair Display', serif;
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    letter-spacing: 12px;
+    text-shadow: 0 4px 8px rgba(0,0,0,0.35);
+    transition: .5s ease-in-out;
+}
+.proyectos-titulo:hover{
+    transform: scale(1.03);
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.555);
+}
+
+/* ----- CONTENEDOR DE DOS COLUMNAS ----- */
+.proyectos-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 5rem;
+    gap: 3rem;
+    background-color: #fffafab0;
+    border-radius: 8px;
+    box-shadow: 0 0 8px #0000007a;
+    padding: 2rem 0;
+    transition: .4s ease-in-out;
+}
+.proyectos-contenedor:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 15px #000000a9;
+}
+
+/* ----- COLUMNA IZQUIERDA ----- */
+.proyecto-izquierda {
+    font-family: 'Playfair Display', serif;
+    width: 65%;
+    padding-left: 3rem;
+}
+.titulo-icono{
+    display: flex;
+    align-items: center;
+}
+.proyecto-izquierda h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.proyecto-izquierda h4{
+    margin-top: 0;
+}
+.proyecto-icono{
+    margin-top: 2.4rem;
+    margin-left: 1rem;
+    color: #333;
+    transform: scale(1.1);
+    transition: .4s ease-in-out;
+}
+.proyecto-icono:hover{
+    color: #555555;
+    transform: scale(1.3);
+}
+
+.proyecto-izquierda .descripcion {
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    line-height: 2rem;
+}
+
+/* ----- LINEA VERTICAL ----- */
+.linea-vertical-proyecto {
+    width: 2px;
+    background-color: #333;
+    height: 65vh;
+    margin-top: 1rem;
+}
+
+/* ----- COLUMNA DERECHA ----- */
+.proyecto-derecha {
+    width: 40%;
+    font-family: 'Playfair Display', serif;
+}
+
+.proyecto-derecha h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.proyecto-derecha p {
+    font-size: 1.5rem;
+    line-height: 1.6rem;
+    color: #000000b0;
+    padding-right: 4rem;
+    line-height: 2.2rem;
+}
+
+/* -- CARRUSEL DE IMAGENES --- */
+
+.swiperContenedor {
+    width: 45vw;
+    border-radius: 10px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slideImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}

@@ -3,6 +3,9 @@ import { useState } from 'react'
 // import viteLogo from '/vite.svg'
 // import './App.css'
 import { Inicio } from './componentes/inicio/Inicio.jsx'
+import { Proyectos } from './componentes/proyectos/Proyectos.jsx'
+import { SobreMi } from './componentes/sobre_mi/SobreMi.jsx'
+import { Contacto } from './componentes/contacto/Contacto.jsx'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -10,6 +13,9 @@ function App() {
   return (
     <>
       <Inicio />
+      <Proyectos />
+      <SobreMi />
+      <Contacto />
     </>
   )
 }

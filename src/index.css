@@ -5,14 +5,23 @@
 
   color-scheme: light dark;
   color: rgba(0, 0, 0, 0.822);
-  background-color: #242424;
-  background-color: #EBE7E1;
-
+  /* background-color: #242424; */
+  background-color: #eee8e1; 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
 html {
   scroll-behavior: smooth;
 }

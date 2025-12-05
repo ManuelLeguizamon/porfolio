@@ -1,0 +1,52 @@
+.contacto-contenedor hr{
+    width: 86%;
+    margin-top: 10vh;
+}
+.contacto-titulo{
+    font-family: 'Playfair Display', serif;
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    letter-spacing: 12px;
+    text-shadow: 0 4px 8px rgba(0,0,0,0.35);
+    transition: .5s ease-in-out;
+}
+.contacto-titulo:hover{
+    transform: scale(1.03);
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.555);
+}
+
+.contacto-card{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    width: 40vw;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: .3s ease-in-out;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+
+}
+.contacto-card:hover{
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.63);
+}
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+}
+.contactoItem{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: .3s ease-in-out;
+}
+.contactoItem:hover{
+    transform: scale(1.06);    
+}

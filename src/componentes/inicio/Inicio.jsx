@@ -1,5 +1,5 @@
 import './Inicio.css'
-import { FaInstagram, FaEnvelope, FaLinkedin } from "react-icons/fa";
+import { FaInstagram, FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
 
 export function Inicio(){
     return(
@@ -15,17 +15,16 @@ export function Inicio(){
                     Buenos Aires, Argentina
                 </p>
                 <div className="icons">
-                    <a href="https://instagram.com" target="_blank"><FaInstagram size={30} /></a>
-                    <a href="mailto:tuemail@gmail.com"><FaEnvelope size={30} /></a>
-                    <a href="https://linkedin.com/in/tu-perfil" target="_blank"><FaLinkedin size={30} /></a>
+                    <a href="https://instagram.com" target="_blank"><FaEnvelope size={30} /></a>
+                    <a href="https://github.com/ManuelLeguizamon" target='_blank'><FaGithub size={30} /></a>
+                    <a href="https://www.linkedin.com/in/manuel-leguizamon-620a01266/" target="_blank"><FaLinkedin size={30} /></a>
                 </div>  
             </div>
-            
 
             <div className='inicio-enlaces'>
-                <a href="#">Proyectos</a>
-                <a href="#">Sobre Mi</a>
-                <a href="#">Contacto</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#sobreMi">Sobre Mi</a>
+                <a href="#contacto">Contacto</a>
             </div>
         </div>
 

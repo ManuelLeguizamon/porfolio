@@ -1,0 +1,67 @@
+.sobreMi{
+    padding: 2rem 6rem;
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+}
+.sobreMi-titulo{
+    font-family: 'Playfair Display', serif;
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    letter-spacing: 12px;
+    text-shadow: 0 4px 8px rgba(0,0,0,0.35);
+    transition: .5s ease-in-out;
+}
+.sobreMi-titulo:hover{
+    transform: scale(1.03);
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.555);
+}
+
+
+.sobreMi-contenedor{
+    margin: 0 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sobreMi-card{
+    background-color: #ffffffbd;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.521);
+    width: 60vw;
+    padding: 0 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    transition: .4s ease-in-out;
+}
+.sobreMi-card:hover{
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.774);
+}
+.sobreMi-card h3{
+    font-size: 2.5rem;
+    margin-bottom: 0;
+    font-family: 'Playfair Display', serif;
+}
+.sobreMiData{
+    line-height: 2rem;
+    font-size: clamp(0.9rem, 1.5vw, 1.5rem);
+}
+.sobreMiData li{
+    transition: .4s ease-in-out;
+    cursor: default;
+}
+.sobreMiData li:hover{
+    transform: scale(1.03);
+  transform: translateX(12px);
+}
+
+.skills{
+    margin-bottom: 50px ;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3vh 4vw;
+    list-style: none;
+    font-size: clamp(0.9rem, 2vw, 2rem);
+}
