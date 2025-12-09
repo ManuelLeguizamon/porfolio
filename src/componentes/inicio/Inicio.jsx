@@ -15,11 +15,12 @@ export function Inicio(){
                     Buenos Aires, Argentina
                 </p>
                 <div className="icons">
-                    <a href="https://instagram.com" target="_blank"><FaEnvelope size={30} /></a>
-                    <a href="https://github.com/ManuelLeguizamon" target='_blank'><FaGithub size={30} /></a>
-                    <a href="https://www.linkedin.com/in/manuel-leguizamon-620a01266/" target="_blank"><FaLinkedin size={30} /></a>
+                    <a href="https://instagram.com" target="_blank"><FaEnvelope size={35} /></a>
+                    <a href="https://github.com/ManuelLeguizamon" target='_blank'><FaGithub size={35} /></a>
+                    <a href="https://www.linkedin.com/in/manuel-leguizamon-620a01266/" target="_blank"><FaLinkedin size={35} /></a>
                 </div>  
             </div>
+                <hr className='hrMovile'/>
 
             <div className='inicio-enlaces'>
                 <a href="#proyectos">Proyectos</a>

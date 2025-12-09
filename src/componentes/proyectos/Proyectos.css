@@ -21,7 +21,7 @@
 .proyectos-contenedor {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: stretch;
     margin-bottom: 5rem;
     gap: 3rem;
     background-color: #fffafab0;
@@ -44,17 +44,22 @@
 .titulo-icono{
     display: flex;
     align-items: center;
+    padding: 0 15px;
 }
 .proyecto-izquierda h3 {
-    font-size: 2.5rem;
+    font-size: clamp(1.7rem, 3.6vw, 3rem);
     margin-bottom: 1rem;
 }
 .proyecto-izquierda h4{
     margin-top: 0;
+    padding: 0 20px;
+    color: rgb(102, 102, 102);
 }
 .proyecto-icono{
-    margin-top: 2.4rem;
-    margin-left: 1rem;
+    margin: 0 1rem;
+    margin-right: 0;
+    margin-top: 1rem;
+    
     color: #333;
     transform: scale(1.1);
     transition: .4s ease-in-out;
@@ -70,36 +75,7 @@
     line-height: 2rem;
 }
 
-/* ----- LINEA VERTICAL ----- */
-.linea-vertical-proyecto {
-    width: 2px;
-    background-color: #333;
-    height: 65vh;
-    margin-top: 1rem;
-}
-
-/* ----- COLUMNA DERECHA ----- */
-.proyecto-derecha {
-    width: 40%;
-    font-family: 'Playfair Display', serif;
-}
-
-.proyecto-derecha h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-.proyecto-derecha p {
-    font-size: 1.5rem;
-    line-height: 1.6rem;
-    color: #000000b0;
-    padding-right: 4rem;
-    line-height: 2.2rem;
-}
-
 /* -- CARRUSEL DE IMAGENES --- */
-
 .swiperContenedor {
     width: 45vw;
     border-radius: 10px;
@@ -116,4 +92,148 @@
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
+}
+
+.swiper-button-next { 
+    width: 3vw !important;
+    margin-right: 7px !important;
+    height: 40px !important;
+    transition: .3s ease-in-out;
+}
+.swiper-button-prev {
+    width: 3vw !important;
+    margin-left: 7px !important;
+    height: 40px !important;
+    transition: .3s ease-in-out;
+}
+.swiper-button-next:hover{
+    transform: scale(1.1);
+}
+.swiper-button-prev:hover{
+    transform: scale(1.1);
+}
+
+/* ----- LINEA VERTICAL ----- */
+.linea-vertical-proyecto {
+    width: 2px;
+    background-color: #333;
+    height: auto;
+    margin-top: 1rem;
+}
+
+/* ----- COLUMNA DERECHA ----- */
+.proyecto-derecha {
+    width: 40%;
+    font-family: 'Playfair Display', serif;
+}
+
+.proyecto-derecha h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.proyecto-derecha p {
+    font-size: clamp(1.1rem, 1.7vw, 1.8rem);
+    color: #000000b0;
+    padding-right: 2rem;
+    line-height: 2.2rem;
+}
+
+/* --RESPONSIVE----------------------- */
+
+@media (max-width:1060px){
+    .proyectos{
+        padding-top: 0;
+    }
+    .proyecto-derecha p{
+        padding-right: 1.2rem;
+        line-height: 1.8rem;
+    }
+    .proyectos-contenedor{
+        gap: 2rem;
+        padding: 1rem 0;
+    }
+}
+
+@media (max-width: 900px){
+    .linea-vertical-proyecto{
+        display: none;
+    }
+
+    .proyectos-contenedor {
+        box-sizing: border-box;
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .proyecto-izquierda {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .proyecto-derecha {
+        width: 100%;
+        padding: 0 40px;
+        padding: 0 9vw;
+    }
+    .proyecto-derecha p{
+        text-align: justify;
+        padding-right: 0;
+        line-height: 2rem;
+    }
+    .proyecto-izquierda {
+        padding-left: 0;
+    }
+    .swiperContenedor {
+        width: 65vw;
+    }
+
+    .proyectos{
+        padding: 4rem 0;
+    }
+    .proyectos-contenedor{
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+    hr{
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+}
+
+@media (max-width: 670px){
+    .proyectos-titulo {
+        font-size: 11vw;
+        text-align: center;
+    }
+    .proyecto-derecha p{
+        line-height: 1.8rem;
+    }
+
+    .titulo-icono{
+        height: 13vh;
+    }
+}
+
+@media (max-width: 579px){
+    .proyecto-izquierda h4{
+        margin-top: 10px;
+    }
+    .proyecto-izquierda h3 {
+        font-size: 5vw;
+    }
+    .proyecto-derecha p{
+        text-align: center;
+    }
+    .proyecto-derecha{
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 340px){
 }

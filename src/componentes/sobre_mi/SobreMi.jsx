@@ -11,7 +11,7 @@ import { SiDjango, SiSqlite, SiPandas, SiJavascript } from "react-icons/si";
 export function SobreMi(){
     return(
         <div className="sobreMi" id="sobreMi">
-            <hr />
+            <hr className='hr-SobreMi'/>
             <h2 className='sobreMi-titulo'>Sobre Mí</h2>
 
             <div className='sobreMi-contenedor'>
@@ -23,7 +23,7 @@ export function SobreMi(){
                     <h3>Educacion</h3>
                     <ul className='educacion sobreMiData'>
                         <li>Secundario terminado, titulo Bachiller. </li>
-                        <li>Tecnicatura en Desarrollo Software en el IFTS 18 (Instituto de formación técnica superior)</li>
+                        <li>Tecnicatura en Desarrollo Software en el <a href="https://www.ifts18.edu.ar/" target='_BLANK'>IFTS 18</a></li>
                         <li>Autoaprendizaje constante mediante cursos online y documentación oficial</li>
                     </ul>
 

@@ -8,7 +8,7 @@ import 'swiper/css/scrollbar';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
 
-import { FaInstagram, FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaGlobe, FaGithub } from "react-icons/fa";
 
 import { useState } from 'react';
 
@@ -17,14 +17,13 @@ function Carrusel({ imagenes = [] }) {
   return (
     <div className="swiperContenedor">
         <Swiper
-            modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+            modules={[Navigation,  Scrollbar, A11y, Autoplay]}
             spaceBetween={1}
             slidesPerView={1}
             navigation
-            pagination={{ clickable: true }}
             scrollbar={{ draggable: true }}
             autoplay={{
-            delay: 4500,
+            delay: 3500,
             disableOnInteraction: false,
             }}
         >
@@ -91,6 +90,7 @@ export function Proyectos() {
                     <div className='titulo-icono'>
                         <h3>Orden Arte</h3>
                         <a href="https://github.com/ManuelLeguizamon/Orden-Arte" target='_blank' className='proyecto-icono'><FaGithub size={30} /></a>
+                        <a href="#" target='_blank' className='proyecto-icono'><FaGlobe size={30} /></a>
                     </div>
 
                     <h4>Python - Django - Sqlite - HTML5 - CSS</h4>
@@ -104,7 +104,7 @@ export function Proyectos() {
 
                 <div className="proyecto-derecha">
                     <p className="descripcion">
-                        Herramienta web para <b>centralizar la organización de proyectos artísticos.</b> Implica registro y logueo para crear grupos de trabajo, dentro de ellos es posible organizar eventos, especificando información clave. Además, incluye un sistema de carpetas para subir y administrar archivos, como partituras u otros documentos.
+                        Herramienta web para <b>centralizar la organización de proyectos artísticos.</b> Implica registro y logueo, creación de grupos dentro de los cuales es posible organizar eventos, especificando información clave, y crear carpetas para subir y administrar documentos.
                     </p>                    
                 </div>
             </div>
@@ -113,9 +113,11 @@ export function Proyectos() {
             <div className="proyectos-contenedor">
                 <div className="proyecto-izquierda">
                     <div className='titulo-icono'>
-                        <h3>Web para una artista plastica</h3>
+                        <h3>Web para una artista </h3>
                         <a href="https://github.com/ManuelLeguizamon/EmmaPagina" target='_blank' className='proyecto-icono'><FaGithub size={30} /></a>
+                        <a href="#" target='_blank' className='proyecto-icono'><FaGlobe size={30} /></a>
                     </div>
+                        
                     <h4>React JS - JavaScript - HTML5 - CSS</h4>
 
                     <div className="contenido">
@@ -140,6 +142,7 @@ export function Proyectos() {
                     <div className='titulo-icono'>
                         <h3>Top 1000 IMDB Movies</h3>
                         <a href="https://github.com/ManuelLeguizamon/imdb-movies-app" target='_blank' className='proyecto-icono'><FaGithub size={30} /></a>
+                        <a href="#" target='_blank' className='proyecto-icono'><FaGlobe size={30} /></a>
                     </div>
 
                     <h4>React JS - JavaScript - Recharts - HTML5 - CSS - Bootstrap</h4>
@@ -152,7 +155,7 @@ export function Proyectos() {
 
                 <div className="proyecto-derecha">
                     <p className="descripcion">
-                        Aplicación web para <b>visualizar un data set</b> de 1000 películas de IMDB. Para ello se limpió ciertos campos no útiles del data set usando pandas. También se añadió una serie de <b>análisis de datos mediante gráficos interactivos.</b>
+                        Aplicación web para <b>visualizar un data set</b> sobre películas de IMDB. Para ello se limpió ciertos campos no útiles del data set usando pandas. También se añadió una serie de <b>análisis de datos mediante gráficos interactivos.</b>
                     </p>
                 </div>
             </div>

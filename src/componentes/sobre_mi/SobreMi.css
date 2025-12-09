@@ -1,7 +1,10 @@
 .sobreMi{
-    padding: 2rem 6rem;
     font-family: 'Inter', sans-serif;
-    width: 100%;
+    width: 100vw;
+    margin: 0 auto;
+}
+.hr-SobreMi{
+    margin: 0 6rem;
 }
 .sobreMi-titulo{
     font-family: 'Playfair Display', serif;
@@ -40,13 +43,19 @@
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.774);
 }
 .sobreMi-card h3{
-    font-size: 2.5rem;
+    font-size: clamp(2rem, 3vw, 3.5rem);
     margin-bottom: 0;
     font-family: 'Playfair Display', serif;
+    width: 100%;
+    text-align: center;
 }
+
 .sobreMiData{
-    line-height: 2rem;
-    font-size: clamp(0.9rem, 1.5vw, 1.5rem);
+    line-height: 1.8rem;
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+}
+.sobreMiData a{
+    color: #0d6efd;
 }
 .sobreMiData li{
     transition: .4s ease-in-out;
@@ -54,14 +63,71 @@
 }
 .sobreMiData li:hover{
     transform: scale(1.03);
-  transform: translateX(12px);
+    transform: translateX(12px);
+}
+.educacion{
+    line-height: 2rem;
 }
 
 .skills{
-    margin-bottom: 50px ;
     display: grid;
+    margin: 0 auto;
+    padding: 0;
+    padding-bottom: 50px;
+    align-items: center;
     grid-template-columns: repeat(3, 1fr);
     gap: 3vh 4vw;
     list-style: none;
     font-size: clamp(0.9rem, 2vw, 2rem);
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 976px){
+    .sobreMi-card{
+        width: 75vw;
+    }
+
+}
+
+@media (max-width: 666px){
+    .sobreMi-contenedor{
+    margin: 0 auto;
+    }
+    .sobreMi-card{
+        padding: 0 4vw;
+    }
+    .sobreMi-titulo{
+        font-size: 11vw;
+    }
+}
+
+@media (max-width: 618px){
+    .sobreMi-card{
+        width: 90vw;
+    }
+    .skills{
+        grid-template-columns: repeat(2, 1fr);
+    }    
+}
+
+@media (max-width: 394px){
+    .sobreMi-card h3{
+        font-size: 8.1vw;
+    }
+}
+
+
+@media (max-width: 250px){
+    .sobreMi{
+        width: 100%;
+        margin: 0;
+    }
+    .sobreMi-card{
+        margin: 0;
+        width: 95%;
+    }
+    .educacion{
+        padding-left: 1.5rem;
+    }
 }
