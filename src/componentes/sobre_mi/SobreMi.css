@@ -4,7 +4,7 @@
     margin: 0 auto;
 }
 .hr-SobreMi{
-    margin: 0 6rem;
+    width: 86%;
 }
 .sobreMi-titulo{
     font-family: 'Playfair Display', serif;
@@ -13,7 +13,7 @@
     margin-bottom: 3rem;
     letter-spacing: 12px;
     text-shadow: 0 4px 8px rgba(0,0,0,0.35);
-    transition: .5s ease-in-out;
+    transition: .5s ease-in-out;        
 }
 .sobreMi-titulo:hover{
     transform: scale(1.03);
@@ -37,10 +37,10 @@
     flex-direction: column;
     align-items: center;
     font-family: 'Inter', sans-serif;
-    transition: .4s ease-in-out;
+    transition: .4s;
 }
 .sobreMi-card:hover{
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.774);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.774);
 }
 .sobreMi-card h3{
     font-size: clamp(2rem, 3vw, 3.5rem);
@@ -48,12 +48,22 @@
     font-family: 'Playfair Display', serif;
     width: 100%;
     text-align: center;
+    letter-spacing: 3px;
 }
 
-.sobreMiData{
-    line-height: 1.8rem;
-    font-size: clamp(1rem, 1.5vw, 1.5rem);
+.info-primera{
+    text-align: center;
+    line-height: 28px !important;
+    margin-bottom: 0;
 }
+.informacion{
+    margin-top: 10px;
+    line-height: 34px;
+}
+.sobreMiData{
+    font-size: clamp(1.1rem, 1.5vw, 2rem);
+}
+
 .sobreMiData a{
     color: #0d6efd;
 }
@@ -65,23 +75,43 @@
     transform: scale(1.03);
     transform: translateX(12px);
 }
+
+
 .educacion{
-    line-height: 2rem;
+    padding: 0;
+    list-style:inside;
+    /* line-height: 38px; */
+}
+.educacion li{
+    margin-bottom: 10px;
+    padding-right: 10px;
 }
 
 .skills{
     display: grid;
-    margin: 0 auto;
+    margin: 1.5rem auto;
     padding: 0;
     padding-bottom: 50px;
     align-items: center;
     grid-template-columns: repeat(3, 1fr);
     gap: 3vh 4vw;
     list-style: none;
-    font-size: clamp(0.9rem, 2vw, 2rem);
+    font-size: clamp(1rem, 2vw, 2rem);
+}
+.skills li:hover{
+    color: #175ec9;
+    letter-spacing: 2px;
+}
+.skill-no-spacing{
+    letter-spacing: 0 !important;
 }
 
+
+
 /* ---------- RESPONSIVE ---------- */
+
+
+
 
 @media (max-width: 976px){
     .sobreMi-card{
@@ -106,17 +136,28 @@
     .sobreMi-card{
         width: 90vw;
     }
-    .skills{
-        grid-template-columns: repeat(2, 1fr);
-    }    
+}
+@media (max-width: 472px){
+    .info-subtitulo{
+        /* font-size: clamp(1.1rem, 1.3vw, 2rem); */
+        font-size: 3.7vw;
+    }
 }
 
 @media (max-width: 394px){
+    .skills{
+        grid-template-columns: repeat(2, 1fr);
+        padding-bottom: 20px;
+    }    
     .sobreMi-card h3{
         font-size: 8.1vw;
     }
 }
-
+@media (max-width: 338px){
+    .sobreMi-titulo {
+        font-size: 2.5rem;
+    }
+}
 
 @media (max-width: 250px){
     .sobreMi{

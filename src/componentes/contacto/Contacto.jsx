@@ -12,7 +12,7 @@ export function Contacto() {
             <h2 className='contacto-titulo' id='contacto'>Contacto</h2>
             <div className='contacto-card' id='contacto'>
                 <p className='contactoItem'>
-                    leguimanu00@gmail.com
+                    <b>leguimanu00@gmail.com</b>
                     <FaCopy
                         onClick={() => {
                             navigator.clipboard.writeText("leguimanu00@gmail.com");

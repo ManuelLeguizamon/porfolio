@@ -39,9 +39,12 @@ function Carrusel({ imagenes = [] }) {
 
 export function Proyectos() {
     const imgEmma = [
-        { src: "/img/proyectoEmma/emma-index.png", title: "Emma 2" },
-        { src: "/img/proyectoEmma/emma-dibujos.png", title: "Emma 1" },
-        { src: "/img/proyectoEmma/emma-talleres.png", title: "Emma 3" },
+        { src: "/img/proyectoEmma/emma-index.png", title: "Emma index" },
+        { src: "/img/proyectoEmma/1.png", title: "Emma 1" },
+        { src: "/img/proyectoEmma/2.png", title: "Emma 2" },
+        { src: "/img/proyectoEmma/3.png", title: "Emma 3" },
+        { src: "/img/proyectoEmma/4.png", title: "Emma 4" },
+        { src: "/img/proyectoEmma/5.png", title: "Emma 5" },
     ];
 
     const imgOrdenArte = [
@@ -65,6 +68,11 @@ export function Proyectos() {
         { src: "/img/Imdb/imdb4.png", title: "Imdb4" },
         { src: "/img/Imdb/imdb5.png", title: "Imdb5" },
         { src: "/img/Imdb/imdb6.png", title: "Imdb6" },
+        { src: "/img/Imdb/imdb7.png", title: "Imdb7" },
+        { src: "/img/Imdb/imdb8.png", title: "Imdb8" },
+        { src: "/img/Imdb/imdb9.png", title: "Imdb9" },
+        { src: "/img/Imdb/imdb10.png", title: "Imdb10" },
+        { src: "/img/Imdb/imdb11.png", title: "Imdb11" },
     ];
 
     const imgVideoJuego = [
@@ -75,7 +83,12 @@ export function Proyectos() {
         { src: "/img/VideoJuego/videojuego5.png", title: "Video Juego5" },
     ];
 
-    
+
+
+    const MsjSinDeploy =  (e) => {
+        e.preventDefault();
+        alert("🚧 Este proyecto todavía no está deployado.");
+    };
 
     return (
         <div className="proyectos" id="proyectos">
@@ -89,8 +102,8 @@ export function Proyectos() {
                 <div className="proyecto-izquierda">
                     <div className='titulo-icono'>
                         <h3>Orden Arte</h3>
-                        <a href="https://github.com/ManuelLeguizamon/Orden-Arte" target='_blank' className='proyecto-icono'><FaGithub size={30} /></a>
-                        <a href="#" target='_blank' className='proyecto-icono'><FaGlobe size={30} /></a>
+                        <a href="https://github.com/ManuelLeguizamon/Orden-Arte" target='_blank' title='Abrir repositorio' className='proyecto-icono' ><FaGithub size={33} /></a>
+                        <a href="#" target='_blank' className='proyecto-icono' title="Abrir proyecto"  onClick={MsjSinDeploy}><FaGlobe size={33} /></a>
                     </div>
 
                     <h4>Python - Django - Sqlite - HTML5 - CSS</h4>
@@ -104,7 +117,7 @@ export function Proyectos() {
 
                 <div className="proyecto-derecha">
                     <p className="descripcion">
-                        Herramienta web para <b>centralizar la organización de proyectos artísticos.</b> Implica registro y logueo, creación de grupos dentro de los cuales es posible organizar eventos, especificando información clave, y crear carpetas para subir y administrar documentos.
+                        Herramienta web para <b>centralizar la organización de proyectos artísticos.</b> Implica registro y logueo para crear grupos dentro de los cuales es posible <b>organizar eventos</b>, especificando información clave, y <b>crear carpetas</b> para subir y <b>administrar documentos</b>.
                     </p>                    
                 </div>
             </div>
@@ -114,8 +127,8 @@ export function Proyectos() {
                 <div className="proyecto-izquierda">
                     <div className='titulo-icono'>
                         <h3>Web para una artista </h3>
-                        <a href="https://github.com/ManuelLeguizamon/EmmaPagina" target='_blank' className='proyecto-icono'><FaGithub size={30} /></a>
-                        <a href="#" target='_blank' className='proyecto-icono'><FaGlobe size={30} /></a>
+                        <a href="https://github.com/ManuelLeguizamon/EmmaPagina" target='_blank' title='Abrir repositorio' className='proyecto-icono'><FaGithub size={33} /></a>
+                        <a href="#" target='_blank' className='proyecto-icono' title="Abrir proyecto"  onClick={MsjSinDeploy}><FaGlobe size={33} /></a>
                     </div>
                         
                     <h4>React JS - JavaScript - HTML5 - CSS</h4>
@@ -131,7 +144,7 @@ export function Proyectos() {
                     {/* <h3>Titulo de la seccion</h3> */}
                     <p className="descripcion">
 
-                        <b>Aplicación web para una artista plástica</b>, Emma Leguizamón, con información sobre las clases y talleres que ofrece, contacto para interesados, imágenes de sus pinturas y dibujos e informacion sobre eventos en los que participó. <b>Le permite mostrarse, buscando expandir carrera.</b>
+                        <b>Aplicación web para una artista plástica</b> con <b>información</b> sobre las clases y talleres que ofrece, <b>contacto</b> para interesados, <b>imágenes</b> de sus pinturas y dibujos y data de eventos en los que participó. Le permite mostrarse, <b>buscando expandir carrera.</b>
                     </p>
                 </div>
             </div>
@@ -141,8 +154,8 @@ export function Proyectos() {
                 <div className="proyecto-izquierda">
                     <div className='titulo-icono'>
                         <h3>Top 1000 IMDB Movies</h3>
-                        <a href="https://github.com/ManuelLeguizamon/imdb-movies-app" target='_blank' className='proyecto-icono'><FaGithub size={30} /></a>
-                        <a href="#" target='_blank' className='proyecto-icono'><FaGlobe size={30} /></a>
+                        <a href="https://github.com/ManuelLeguizamon/imdb-movies-app" target='_blank' title='Abrir repositorio' className='proyecto-icono'><FaGithub size={33} /></a>
+                        <a href="https://ml-imdb.vercel.app/" target='_blank' title="Abrir proyecto" className='proyecto-icono'><FaGlobe size={33} /></a>
                     </div>
 
                     <h4>React JS - JavaScript - Recharts - HTML5 - CSS - Bootstrap</h4>
@@ -155,7 +168,7 @@ export function Proyectos() {
 
                 <div className="proyecto-derecha">
                     <p className="descripcion">
-                        Aplicación web para <b>visualizar un data set</b> sobre películas de IMDB. Para ello se limpió ciertos campos no útiles del data set usando pandas. También se añadió una serie de <b>análisis de datos mediante gráficos interactivos.</b>
+                        Aplicación web para <b>visualizar un data set</b> sobre películas de IMDB. Para ello se limpió ciertos campos no útiles del data set usando <b>Pandas.</b> También se añadió una serie de <b>análisis de datos mediante gráficos interactivos.</b>
                     </p>
                 </div>
             </div>
@@ -165,19 +178,25 @@ export function Proyectos() {
                 <div className="proyecto-izquierda">
                     <div className='titulo-icono'>
                         <h3>Video Juego</h3>
-                        <a href="https://github.com/ManuelLeguizamon/Battle-Ships-game" target='_blank' className='proyecto-icono'><FaGithub size={30} /></a>
+                        <a href="https://github.com/ManuelLeguizamon/Battle-Ships-game" target='_blank' title='Abrir repositorio' className='proyecto-icono'><FaGithub size={33} /></a>
                     </div>
                     <h4>Python - PyGames</h4>
-                    <div className="contenido">
+                    
+                    {/* <div className="contenido">
                         <Carrusel imagenes={imgVideoJuego} />
-                    </div> 
+                    </div>  */}
+                    
+                    <video className='swiperContenedor' controls>
+                        <source src="/img/VideoJuego/battle-ship.mp4" type="video/mp4" />
+                        Tu navegador no soporta el video.
+                    </video>
                 </div>
 
                 <div className="linea-vertical-proyecto"></div>
 
                 <div className="proyecto-derecha">
                     <p className="descripcion">
-                        <b>Video juego de batalla de naves para dos jugadores</b> creado con PyGames. <br /> El juego implica dispararse y esquivar las balas de tu adversario. El que pueda herir a su adversario 5 veces gana.
+                        <b>Video juego de batalla de naves para dos jugadores</b> desarrollado con PyGames. Efectos de sonido desarrollados con Fl Studio <br /> 
                     </p>
 
                 </div>
