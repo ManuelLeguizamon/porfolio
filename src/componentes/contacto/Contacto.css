@@ -1,3 +1,4 @@
+
 .contacto-contenedor hr{
     width: 86%;
     margin-top: 10vh;
@@ -15,24 +16,31 @@
     text-shadow: 0 4px 10px rgba(0, 0, 0, 0.555);
 }
 
+
 .contacto-card{
+    font-family: 'Inter', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 2rem;
+    padding: 10px 2rem;
     margin: 4rem auto;
-    width: 400px;
+    width: 50vw;
     border-radius: 10px;
-    background-color: rgb(255, 255, 255);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     transition: .3s ease-in-out;
     color: rgb(0, 0, 0);
-    font-size: 1.5rem;
+    font-size: clamp(1.1rem, 2vw, 2rem) !important;
     font-style: italic;
+    
+    background-color: rgb(255, 255, 255);
+        background-image:  url('/img/footer.png');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
 }
 .contacto-card:hover{
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.63);
+    box-shadow: 0 0 18px  rgba(0, 0, 0, 0.459);
 }
 a{
     text-decoration: none;
@@ -40,13 +48,21 @@ a{
     margin-bottom: 20px;
 }
 .contactoItem{
+    padding: 3px 15px;
+    background-color: rgba(155, 148, 148, 0.151);
+    border: 3px solid rgba(179, 179, 179, 0.062);
+    border-radius: 15px;
+
     display: flex;
     align-items: center;
     gap: 7px;
-    transition: .3s ease-in-out;
+    margin: 7px;
+    transition: .4s ease-in-out;
 }
 .contactoItem:hover{
     transform: scale(1.06);    
+    background-color: rgba(209, 199, 199, 0.712);
+    border: 3px solid rgba(179, 179, 179, 0.062);
 }
 .copiado-msj{
     color: rgb(0, 248, 62);
@@ -59,6 +75,11 @@ a{
     to { opacity: 1; }
 }
 /* --- RESPONSIVE --------- */
+@media (max-width:947px){
+    .contacto-card{
+        width: 400px;
+    }
+}
 
 @media (max-width: 666px){
     .contacto-titulo{
@@ -72,6 +93,5 @@ a{
 @media (max-width: 438px){
     .contacto-card{
         width: 90%;
-        font-size: 6vw;
     }
 }
