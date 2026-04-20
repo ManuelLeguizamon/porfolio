@@ -6,7 +6,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay, Zoom } from 'swiper/modules';
 
 import { FaGlobe, FaGithub } from "react-icons/fa";
 
@@ -17,8 +17,9 @@ function Carrusel({ imagenes = [] }) {
   return (
     <div className="swiperContenedor">
         <Swiper
-            modules={[Navigation,  Scrollbar, A11y, Autoplay]}
+            modules={[Navigation,  Scrollbar, A11y, Autoplay, Zoom]}
             spaceBetween={1}
+            zoom={true}
             slidesPerView={1}
             navigation
             scrollbar={{ draggable: true }}
@@ -29,7 +30,15 @@ function Carrusel({ imagenes = [] }) {
         >
             {imagenes.map((img, i) => (
             <SwiperSlide key={i}>
-                <img src={img.src} alt={img.title} className="slideImg" />
+                {/* <img src={img.src} alt={img.title} className="slideImg" /> */}
+
+                <div className="swiper-zoom-container">
+                        <img 
+                            src={img.src} 
+                            alt={img.title} 
+                            className="slideImg" 
+                        />
+                </div>
             </SwiperSlide>
             ))}
         </Swiper>
@@ -103,7 +112,7 @@ export function Proyectos() {
                     <div className='titulo-icono'>
                         <h3>Orden Arte</h3>
                         <a href="https://github.com/ManuelLeguizamon/Orden-Arte" target='_blank' title='Abrir repositorio' className='proyecto-icono' ><FaGithub size={33} /></a>
-                        <a href="#" target='_blank' className='proyecto-icono' title="Abrir proyecto"  onClick={MsjSinDeploy}><FaGlobe size={33} /></a>
+                        <a href="https://orden-arte.onrender.com/" target='_blank' className='proyecto-icono' title="Abrir proyecto" ><FaGlobe size={33} /></a>
                     </div>
 
                     <h4>Python - Django - Sqlite - HTML5 - CSS</h4>
@@ -179,6 +188,7 @@ export function Proyectos() {
                     <div className='titulo-icono'>
                         <h3>Video Juego</h3>
                         <a href="https://github.com/ManuelLeguizamon/Battle-Ships-game" target='_blank' title='Abrir repositorio' className='proyecto-icono'><FaGithub size={33} /></a>
+                        <a href="#" target='_blank' className='proyecto-icono' title="Abrir proyecto"  onClick={MsjSinDeploy}><FaGlobe size={33} /></a>
                     </div>
                     <h4>Python - PyGames</h4>
                     

@@ -104,8 +104,9 @@
       align-items: center;
       align-items: start;
       justify-content: center;
-      margin-left: auto;
-      margin-right: auto;
+      /* margin-left: auto; */
+      /* margin-right: auto; */
+      margin-bottom: 5vh;
       padding: 0;
   }
   .inicio-contenido{
@@ -121,10 +122,7 @@
     text-align: center;
     padding: 0 10px;
     margin: 0 auto;
-<<<<<<< HEAD
     margin-top: 15px;
-=======
->>>>>>> 28d5f881373db69f37c97995bb4f63092bae0e6f
     letter-spacing: 10px;
   }
   .sub-info{
@@ -149,8 +147,12 @@
     font-weight: 600;
   }
   .inicio-enlaces a{
-    padding: 8px 0;
+    padding: 0;
+    margin: 15px auto;
     letter-spacing: 1.4vw;
+  }
+  .inicio-enlaces a:nth-child(2){
+    margin: 25px auto;
   }
   .icons {
       display: block;

@@ -23,7 +23,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px 2rem;
+    padding: 10px 0px;
     margin: 4rem auto;
     width: 50vw;
     border-radius: 10px;
@@ -48,7 +48,7 @@ a{
     margin-bottom: 20px;
 }
 .contactoItem{
-    padding: 3px 15px;
+    padding: 3px 3px;
     background-color: rgba(155, 148, 148, 0.151);
     border: 3px solid rgba(179, 179, 179, 0.062);
     border-radius: 15px;
@@ -74,10 +74,21 @@ a{
 @keyframes aparecer {
     to { opacity: 1; }
 }
+
+
+
+
+
+
 /* --- RESPONSIVE --------- */
+
+
 @media (max-width:947px){
     .contacto-card{
         width: 400px;
+    }
+    .contactoItem:hover{
+        transform: scale(1);
     }
 }
 
