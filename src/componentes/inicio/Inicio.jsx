@@ -1,7 +1,22 @@
+import { useState, useEffect } from 'react';
 import './Inicio.css'
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaSun, FaMoon } from "react-icons/fa";
 
 export function Inicio(){
+    const [isDarkMode, setIsDarkMode] = useState(false);
+
+    useEffect(() => {
+        if (isDarkMode) {
+            document.body.classList.add('dark-mode');
+        } else {
+            document.body.classList.remove('dark-mode');
+        }
+    }, [isDarkMode]);
+
+    const toggleDarkMode = () => {
+        setIsDarkMode(!isDarkMode);
+    };
+
     return(
         <div className='inicio' id='inicio'>
             <div className="linea-vertical"></div>
@@ -15,8 +30,11 @@ export function Inicio(){
                         Buenos Aires, Argentina
                     </p>
                     <div className="icons">
-                        <a href="https://github.com/ManuelLeguizamon" target='_blank'><FaGithub size={35} /></a>
-                        <a href="https://www.linkedin.com/in/manuel-leguizamon-620a01266/" target="_blank"><FaLinkedin size={35} /></a>
+                        <a href="https://github.com/ManuelLeguizamon" target='_blank'><FaGithub size={35} className='iconoInicio'/></a>
+                        <a href="https://www.linkedin.com/in/manuel-leguizamon-620a01266/" target="_blank"><FaLinkedin size={35} className='iconoInicio'/></a>
+                        <button className='iconoInicio botonClaroOscuro' title='Modo claro/oscuro' onClick={toggleDarkMode}>
+                            {isDarkMode ? <FaMoon size={35} /> : <FaSun size={35} />}
+                        </button>
                     </div>  
                 </div>
                     <hr className='hrMovile'/>
